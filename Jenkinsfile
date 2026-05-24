@@ -25,7 +25,7 @@ pipeline {
 
             steps {
 
-                bat 'mvn clean compile'
+                sh 'mvn clean compile'
 
             }
 
@@ -35,7 +35,7 @@ pipeline {
 
             steps {
 
-                bat 'mvn test'
+                sh 'mvn test'
 
             }
 
@@ -45,7 +45,7 @@ pipeline {
 
             steps {
 
-                bat 'mvn clean package'
+                sh 'mvn clean package'
 
             }
 
